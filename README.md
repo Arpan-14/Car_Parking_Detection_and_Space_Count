@@ -35,12 +35,18 @@ A real-time car parking space detection system using deep learning that automati
 
 ## 🚀 Demo
 
-### Web Interface
+### Web Interface Screenshots
 The Flask web application provides:
 - Live video stream with parking space detection
 - Real-time count of available spaces
 - Responsive Bootstrap UI
 - REST API for integration
+
+**To add screenshots:**
+1. Run the Flask app: `python main.py`
+2. Take screenshots of the web interface
+3. Save them as `demo_web.png` in the project root
+4. Update this README with: `![Web Demo](demo_web.png)`
 
 ### Streamlit Interface
 The Streamlit app offers:
@@ -48,6 +54,12 @@ The Streamlit app offers:
 - Process video files
 - Interactive visualization
 - Real-time results
+
+**To add Streamlit screenshots:**
+1. Run: `streamlit run app.py`
+2. Take screenshots of the interface
+3. Save them as `demo_streamlit.png`
+4. Add to README: `![Streamlit Demo](demo_streamlit.png)`
 
 ## 🛠 Installation
 
@@ -356,5 +368,3 @@ If you encounter any issues or have questions:
 ---
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
-
-![Parking Detection Demo](https://via.placeholder.com/800x400/0066cc/ffffff?text=Parking+Detection+Demo)
