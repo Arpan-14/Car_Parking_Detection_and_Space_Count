@@ -6,15 +6,18 @@ from keras.models import load_model
 
 app = Flask(__name__)
 
-model = load_model('model_final.h5')
+model = load_model(r'C:\Users\arpan\car_parking_detection_space_count\model_final.h5')
 
 class_dictionary = {0: 'no_car', 1: 'car'}
 
-cap = cv2.VideoCapture('car_test.mp4')
-
-with open('carposition.pkl', 'rb') as f:
+cap = cv2.VideoCapture(r'C:\Users\arpan\car_parking_detection_space_count\car_test.mp4')
+#cap = cv2.VideoCapture(r"C:\Users\arpan\OneDrive\Desktop\parking\vid.mp4")
+#"C:\Users\arpan\OneDrive\Desktop\parking\vid.mp4"
+with open(r'C:\Users\arpan\car_parking_detection_space_count\carposition.pkl', 'rb') as f:
     posList = pickle.load(f)
-
+#"C:\Users\arpan\OneDrive\Desktop\parking\new_video_positions.pkl"
+# with open(r'C:\Users\arpan\OneDrive\Desktop\parking\new_video_positions.pkl', 'rb') as f:
+#     posList = pickle.load(f)
 width, height = 130, 65
 
 def checkParkingSpace(img):
